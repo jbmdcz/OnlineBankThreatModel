@@ -28,11 +28,11 @@
             },
             "attrs": {
               "text": {
-                "text": "Website De"
+                "text": "Website Dev"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -124,14 +124,45 @@
             "id": "ff40633d-6a67-4ef5-bf8c-3e342a8545ec",
             "data": {
               "type": "tm.Actor",
-              "name": "Website Dev",
+              "name": "Website Dev ",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "bf2be1b0-6716-4b95-b212-3f8452cdd1c4",
+                  "title": "User Impersonation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Threat actors impersonate legitimate users to gain unauthorized access",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "326137ce-6fbe-49c7-b083-7c784e50af81",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -1150,7 +1181,22 @@
                 "x": 254,
                 "y": 180
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1909,6 +1955,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Cybersecurity Architect",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
